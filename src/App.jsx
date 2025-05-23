@@ -107,12 +107,7 @@ function App() {
           control={control}
           defaultValue=""
           render={({ field }) => (
-            <FormControl
-              fullWidth
-              variant="outlined"
-              error={!!errors.gender}
-              helperText={errors.gender?.message}
-            >
+            <FormControl fullWidth variant="outlined" error={!!errors.gender}>
               <InputLabel id="gender-label">Gender</InputLabel>
               <Select labelId="gender-label" label="Gender" {...field}>
                 <MenuItem value="male">Male</MenuItem>
